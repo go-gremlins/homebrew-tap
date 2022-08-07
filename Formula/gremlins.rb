@@ -11,7 +11,7 @@ class Gremlins < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/go-gremlins/gremlins/releases/download/v0.2.0/gremlins_0.2.0_darwin_arm64.tar.gz"
-      sha256 "0f96d8c0efa7b3762022a802bfc488aedd52904d562b1cd10d84de4eda03e903"
+      sha256 "e8fe6fb5a6c8f350ae5dd17eb0c331ee9fd697de80cfa052302c67906e4ccdd7"
 
       def install
         bin.install "gremlins"
@@ -19,7 +19,7 @@ class Gremlins < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/go-gremlins/gremlins/releases/download/v0.2.0/gremlins_0.2.0_darwin_amd64.tar.gz"
-      sha256 "f84020995e1eebbc9081e23226cf9cdcfe11259334020aaf40529dea19b5ce56"
+      sha256 "078df5fd9dcbdb4d6a33dbb37c43d4ec8fbc2ed3a1d4cf62fa3cf47d7c5ad256"
 
       def install
         bin.install "gremlins"
@@ -30,7 +30,7 @@ class Gremlins < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/go-gremlins/gremlins/releases/download/v0.2.0/gremlins_0.2.0_linux_amd64.tar.gz"
-      sha256 "65b4ee0108ff58d9ba88a4ac31938575818da7b3656fdf825ac620698078b8e9"
+      sha256 "91be7699971800779c592e5fad7955403a9aef1f2895ce3e02e590fe38f7e910"
 
       def install
         bin.install "gremlins"
@@ -38,7 +38,7 @@ class Gremlins < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/go-gremlins/gremlins/releases/download/v0.2.0/gremlins_0.2.0_linux_arm64.tar.gz"
-      sha256 "b55e32ced38e7e9b0cc83fba2ebce3af9a47fc54fefe151200b21cd437ea756d"
+      sha256 "ec07ad8918b2950693f751ee63de65f48f5a5d13c1a24379f0dda8ff86bb42b1"
 
       def install
         bin.install "gremlins"
