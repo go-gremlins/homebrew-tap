@@ -5,21 +5,21 @@
 class Gremlins < Formula
   desc "A mutation testing tool for Go."
   homepage "https://github.com/go-gremlins/gremlins"
-  version "0.2.1"
+  version "0.2.2"
   license "Apache 2.0 License"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-gremlins/gremlins/releases/download/v0.2.1/gremlins_0.2.1_darwin_amd64.tar.gz"
-      sha256 "9f31f88cccea13c83190c2c2091c15cf4a7e22f4228c8f67883dc4436b7073a0"
+      url "https://github.com/go-gremlins/gremlins/releases/download/v0.2.2/gremlins_0.2.2_darwin_amd64.tar.gz"
+      sha256 "165c2b24fdf35b91caf678ea9cccb5eb7884f07c6896200526014d6304fcbb2a"
 
       def install
         bin.install "gremlins"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-gremlins/gremlins/releases/download/v0.2.1/gremlins_0.2.1_darwin_arm64.tar.gz"
-      sha256 "5d1b34bbc2afbbf268f088b689304b0aab902d58e08f3567a581431e32a0e723"
+      url "https://github.com/go-gremlins/gremlins/releases/download/v0.2.2/gremlins_0.2.2_darwin_arm64.tar.gz"
+      sha256 "88cdff98e6feea1f5de79e2a922096fe02f8e753373d805165db0f5e6ac71bf9"
 
       def install
         bin.install "gremlins"
@@ -28,17 +28,17 @@ class Gremlins < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-gremlins/gremlins/releases/download/v0.2.1/gremlins_0.2.1_linux_arm64.tar.gz"
-      sha256 "169faf16ceeea8950e6f5368528f952c992a72d32df1e112af71555316d027e2"
+    if Hardware::CPU.intel?
+      url "https://github.com/go-gremlins/gremlins/releases/download/v0.2.2/gremlins_0.2.2_linux_amd64.tar.gz"
+      sha256 "e143be9e98662d58ba9e6930c3a76461dcaacbb2f64fe8febea7de06766e5c4a"
 
       def install
         bin.install "gremlins"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/go-gremlins/gremlins/releases/download/v0.2.1/gremlins_0.2.1_linux_amd64.tar.gz"
-      sha256 "ef06444de0564b1899efd5be233290408bf109d980541f2628fc911aacd66ddc"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/go-gremlins/gremlins/releases/download/v0.2.2/gremlins_0.2.2_linux_arm64.tar.gz"
+      sha256 "d898560c3fd3e2ad7479235e871e0602fdd9c5196c542625a784da1ac92438c3"
 
       def install
         bin.install "gremlins"
